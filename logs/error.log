@@ -1,0 +1,2 @@
+2026/10/26 16:35:17 [notice] 1677#1677: using inherited sockets from "5;6;"
+2026/11/01 23:17:38 [error] 199#199: *5 directory index of "/var/www/html/webtest/" is forbidden, client: 127.0.0.1, server: , request: "HEAD / HTTP/1.1", host: "localhost:8080"
