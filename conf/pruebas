@@ -1,0 +1,25 @@
+server {
+    listen 8083;
+    server_name localhost;
+    default_type text/plain;
+    types { }
+    location = / {
+        return 200 "A: exacta /\n";
+    }
+
+    location / {
+        return 200 "B: prefijo /\n";
+    }
+
+    location /img/ {
+        return 200 "C: prefijo /img/\n";
+    }
+
+    location ^~ /static/ {
+        return 200 "D: ^~ /static/\n";
+    }
+
+    location ~* \.(png|jpg)$ {
+        return 200 "E: regex imagen\n";
+    }
+}
