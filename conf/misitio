@@ -1,6 +1,6 @@
 server {
     listen 8081;
-    server_name localhost;
+    server_name miweb.localhost;
 
     root /var/www/miweb;
     index index.html;

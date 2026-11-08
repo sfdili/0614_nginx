@@ -1,6 +1,6 @@
 server {
-    listen 8082;
-    server_name localhost;
+    listen 8081;
+    server_name web2.localhost;
 
     root /var/www/web2;
     index index.html;
